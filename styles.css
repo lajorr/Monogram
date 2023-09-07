@@ -1,0 +1,314 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Inder";
+}
+
+body {
+
+    background-color: #ededed;
+
+}
+
+
+nav {
+
+    background-color: #1a2456;
+    color: #F1BEB0;
+    padding: 18px 18px;
+    margin: 8px;
+
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+    width: calc(100vw - 55px - 14px);
+    z-index: 1000;
+    /* 55 = margin-left + margin-right + padding-left + padding-right */
+    /* width: 100%; */
+    /* max-width: 100vw; */
+    /* box-sizing: border-box; */
+
+}
+
+nav ul li a,
+.logo a {
+    color: #F1BEB0;
+    text-decoration: none;
+}
+
+.nav-dropdown a {
+    display: block;
+    margin-top: 10px;
+}
+
+.logo a {
+    font-size: 18px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul li i {
+    margin-right: 5px;
+}
+
+.active a,
+nav ul li a:hover,
+.logo a:hover {
+    color: #ca4925;
+}
+
+.dropdown {
+    display: none;
+}
+
+nav ul li:focus-within .dropdown {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    background-color: white;
+    transform: translateX(100px);
+}
+
+nav ul li:focus-within .dropdown ul li {
+
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width: 150px;
+    padding: 5px;
+
+}
+
+nav ul li:focus-within .dropdown ul li a {
+    color: black;
+}
+
+nav ul li:focus-within .dropdown ul li:hover {
+    background-color: rgb(221, 220, 220);
+}
+
+header {
+    height: 73vh;
+    background-color: black;
+    color: #F1BEB0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    background-image: url('https://images.pexels.com/photos/17312357/pexels-photo-17312357/free-photo-of-old-fiat-cinquecento-by-car-service.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 38px;
+    font-weight: bold;
+    width: 500px;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.console {
+    width: 500px;
+    /* background-color: #ca4925; */
+
+}
+
+.console-img {
+    background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-position: center;
+    height: 350px;
+}
+
+.console img {
+    width: 500px;
+    height: 350px;
+
+    transition: opacity 500ms;
+
+}
+
+.console img:hover {
+    opacity: 0;
+}
+
+.info-name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.info-name-price h1 {
+    font-size: 22px;
+}
+
+.console-info {
+    padding: 0px 10px;
+    color: #1a2456;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.consoles {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    width: min-content;
+    gap: 20px;
+    margin: 50px 0px;
+    /* justify-self: center; */
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.divider {
+    height: 450px;
+    width: 100%;
+    background-color: #c7c7c7;
+    background-image: url('https://images.unsplash.com/photo-1693146604593-f533da0f55ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+.divider p {
+    margin-top: 20px;
+}
+
+.prod-image {
+
+    height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1591886892231-62ce71610839?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1992&q=80');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+
+    transition: 500ms;
+}
+
+.product img:hover {
+    opacity: 0;
+}
+
+.prod-info h1 {
+
+    font-size: 22px;
+    width: 50%;
+}
+
+.prod-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1a2456;
+    padding: 0px 5px;
+}
+
+.products {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 50px;
+    margin: 50px 0px;
+}
+
+footer {
+    background-color: #1a2456;
+    width: 100%;
+    color: #F1BEB0;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contents {
+    display: grid;
+    grid-template: 1fr/ repeat(4, 1fr) 420px;
+    gap: 50px;
+    width: 70%;
+}
+
+.footer-contents h2 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-contents ul li a {
+    text-decoration: none;
+    color: #F1BEB0;
+}
+
+.footer-contents ul li {
+    list-style-type: none;
+    margin-top: 3px;
+}
+
+.footer-contents ul li:hover {
+    text-decoration: underline;
+}
+
+form input[type="email"] {
+
+    background: transparent;
+    border: 1px solid #F1BEB0;
+    padding: 5px 10px;
+}
+
+form button {
+    background-color: #F1BEB0;
+    border: none;
+    color: #1a2456;
+    font-weight: bold;
+    padding: 8px 28px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+.mono-form {
+    margin: 10px 0px;
+}
+
+.mono-socials i {
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
